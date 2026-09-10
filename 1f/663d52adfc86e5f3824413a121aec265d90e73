@@ -1,0 +1,20 @@
+.software-factory/evidence/adoption-run.json
+  h_b156936c57c455 6-8,15,19-22
+.software-factory/evidence/adoption.json
+  h_b156936c57c455 4,9,11
+src/interview.rs
+  h_b156936c57c455 391-432
+templates/schemas-live-with-their-handler.yaml
+  h_b156936c57c455 26,28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "1f663d52adfc86e5f3824413a121aec265d90e73",
+  "prompts": {},
+  "humans": {
+    "h_b156936c57c455": {
+      "author": "Ary Rabelo <aryrabelo@gmail.com>"
+    }
+  }
+}
