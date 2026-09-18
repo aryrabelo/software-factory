@@ -42,6 +42,10 @@ other.
 
 | 12 | [Calls to one capability share the guard](calls-to-one-capability-share-the-guard.md) | Callers of one resolvable capability cannot silently disagree about the guard that enables it, a point fix does not hide the next unguarded path, and unsupported control flow is counted rather than called safe. |
 
+| 13 | [A property is a proof with a falsifier](a-property-is-a-proof-with-a-falsifier.md) | A plan cites a statement rather than an example, the citation names the mutation that statement rejects, and removing that mutation turns the plan's own gate red. |
+
+| 14 | [A hazard tool is proven to fail](a-hazard-tool-is-proven-to-fail.md) | A repository whose performance guard cannot fail is told so by `sf verify`, with the command it ran and the exit code it got, and every other hazard tool it declares is proved to go red on a defect planted under it. |
+
 ## Parked
 
 Nothing is parked. Rule packs waited on version-conditional activation, which
