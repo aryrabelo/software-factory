@@ -29,7 +29,10 @@ fire on here. The rule earns its keep in the repositories that consume this
 binary and load plugins by `file:` URL, and in the consumers whose test trees
 move the home variable. `L4.CLAIM_IS_SUPPORTED_BY_ITS_EVIDENCE` is off for a
 different reason: it ships no default judge and this repository has not written
-one, so its `run` is empty and it can decide nothing until one exists. All
+one, so its `run` is empty and it can decide nothing until one exists — and
+what writing that judge involves is
+[a design note of its own](concepts/judging-a-claim-against-its-evidence.md),
+because an oracle nobody proved on both sides approves everything. All
 seven remain proven by their fixtures;
 they are simply pointed at nothing here, and `L5.NO_INERT_RULE` is what forced
 each of them to become a written decision instead of a silent pass.

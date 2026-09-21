@@ -90,6 +90,7 @@ does not. How that works is [written down](docs/development/documentation.md).
 | [The gate](docs/concepts/the-gate.md) | L3 in practice: evidence that expires when the code moves |
 | [Stopping an agent from relaxing the rules](docs/concepts/locking-the-guardrail.md) | The two rules that make a weakened guardrail undeniable |
 | [Hunting defect classes](docs/concepts/hunting-defect-classes.md) | L6, and what static analysis honestly cannot do |
+| [Judging a claim against its evidence](docs/concepts/judging-a-claim-against-its-evidence.md) | The one check no query can make, and how to wire the oracle it needs |
 
 **Reference**
 
@@ -113,6 +114,40 @@ what it claimed, and has not gone stale since.
 
 And it is deliberately small. A method you cannot read in an afternoon is a
 method nobody will adopt.
+
+---
+
+## When the check is a judgment
+
+Most of the catalog is queries and globs. One rule is not:
+`L4.CLAIM_IS_SUPPORTED_BY_ITS_EVIDENCE` asks whether the evidence a claim
+cites actually supports the sentence — a question no query can decide, and the
+failure it catches is a report that says `passed` without containing the effect
+the claim promises.
+
+It ships enabled by nothing. The catalog names no judge for the same reason it
+names no code generator: a judgment that costs money or needs a credential
+belongs to the repository running it. You point the rule at a command you own:
+
+```yaml
+  L4.CLAIM_IS_SUPPORTED_BY_ITS_EVIDENCE:
+    enabled: true
+    options:
+      run: >-
+        node tools/claim-judge.mjs --request gates/jev/claims.json
+        --expect relation=supports --min-confidence 0.8 --cache gates/jev/cache.json
+```
+
+The reference oracle is a [TypeSafe Jev](https://typesafe.ai) judgment: a typed
+choice with a calibrated confidence, which is what makes it comparable against
+a threshold instead of parsed and believed. Four properties make that command a
+check rather than a rubber stamp — the deterministic part runs first, a
+confidence floor with low verdicts as findings, cached verdicts committed so
+the check replays exactly and for free, and a negated-criterion twin proving
+the oracle can still fail.
+
+How to configure and write it, in full:
+[judging a claim against its evidence](docs/concepts/judging-a-claim-against-its-evidence.md).
 
 ---
 
