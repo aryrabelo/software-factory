@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "gate": "adoption",
-  "implementation_sha256": "502b914ea11a7c6384d15fb64a66c9d53a50c3b5d4ee7f51599191eb6afbe999",
+  "implementation_sha256": "1f7c3fffc82795777d5152eddd356c60f9b5c32c6caa35e00274be7721519cfb",
   "runs": [
     {
       "scenario": "adoption",
       "status": "passed",
-      "actor": "Claude (agent), running .software-factory/evidence/adoption-scenario.sh against a scratch checkout of palmares at cd135c71e1debc55c20e08059749fe37ee943e21, for Ary Rabelo",
+      "actor": "Hermes (agent), running .software-factory/evidence/adoption-scenario.sh against a scratch checkout of the adopter corpus (a TypeScript workspace checkout prepared for the scenario), for Nicolas Melo",
       "report": ".software-factory/evidence/adoption-run.json",
-      "report_sha256": "e7ff1b0068855d588bd76073c8a185301c7fd7123ccb3cdeb28194cef082cd1c",
+      "report_sha256": "45adb5dfbe689345ef36277a5008a5223b200a42525721fb8ff3e32c9961b601",
       "required_assertions": []
     }
   ]
