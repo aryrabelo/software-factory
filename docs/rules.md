@@ -19,10 +19,15 @@ repository.**
 `L0.ONE_ENTRYPOINT_PER_FILE` and `L0.PERSISTENCE_STAYS_IN_REPOSITORIES` ship no
 Rust query, because neither concept has a Rust meaning yet and inventing one so
 a coverage table looks full is how a rule starts producing findings nobody
-believes. `L2.GENERATED_FILES_ARE_LOCKED` is off because nothing here is
 generated. `L6.DATA_RACES_ARE_DETECTED` is off because `sf` spawns no threads,
 holds no locks and shares no mutable state — and that stops being true the
-moment any of it becomes concurrent. All four remain proven by their fixtures;
+moment any of it becomes concurrent.
+`L4.CLAIM_IS_SUPPORTED_BY_ITS_EVIDENCE` is off because it ships no default
+judge and this repository has not written one: the rule asks whether a body of
+evidence supports a sentence, which no query can decide, so it runs a command
+the repository owns. Enabling it with nothing in `run` would be a rule lying
+about its own coverage, which is exactly what `L5.NO_INERT_RULE` exists to
+refuse. All five remain proven by their fixtures;
 they are simply pointed at nothing here, and `L5.NO_INERT_RULE` is what forced
 each of them to become a written decision instead of a silent pass.
 

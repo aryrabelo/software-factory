@@ -278,6 +278,7 @@ pub const BUILTIN: &[(&str, &str)] = &[
     ("L4/plan-criterion-names-its-check.yaml", include_str!("../catalog/L4/plan-criterion-names-its-check.yaml")),
     ("L4/plan-proof-budget.yaml", include_str!("../catalog/L4/plan-proof-budget.yaml")),
     ("L4/claim-cites-its-evidence.yaml", include_str!("../catalog/L4/claim-cites-its-evidence.yaml")),
+    ("L4/claim-is-supported-by-its-evidence.yaml", include_str!("../catalog/L4/claim-is-supported-by-its-evidence.yaml")),
     ("L4/rule-prose-names-a-real-command.yaml", include_str!("../catalog/L4/rule-prose-names-a-real-command.yaml")),
     ("L5/every-check-has-a-mutation-test.yaml", include_str!("../catalog/L5/every-check-has-a-mutation-test.yaml")),
     ("L5/no-inert-rule.yaml", include_str!("../catalog/L5/no-inert-rule.yaml")),
