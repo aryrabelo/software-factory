@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "sf_version": "0.4.0",
-  "catalog_digest": "5ff903f8673aa492b307726d2b7bfb0a46000ed490c202da88b00286d623bbeb",
+  "catalog_digest": "c01c698791699a1b86ee847a3c99c0f3dc50fd7d64e82cb85c40bd6b7e4841c8",
   "rules": {
     "L0.EXCEPTIONS_HAVE_ONE_HOME": {
       "severity": "high",

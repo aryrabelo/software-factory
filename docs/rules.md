@@ -27,7 +27,10 @@ judge and this repository has not written one: the rule asks whether a body of
 evidence supports a sentence, which no query can decide, so it runs a command
 the repository owns. Enabling it with nothing in `run` would be a rule lying
 about its own coverage, which is exactly what `L5.NO_INERT_RULE` exists to
-refuse. All five remain proven by their fixtures;
+refuse — and what writing that judge involves is
+[a design note of its own](concepts/judging-a-claim-against-its-evidence.md),
+because an oracle nobody proved on both sides approves everything.
+All five remain proven by their fixtures;
 they are simply pointed at nothing here, and `L5.NO_INERT_RULE` is what forced
 each of them to become a written decision instead of a silent pass.
 
