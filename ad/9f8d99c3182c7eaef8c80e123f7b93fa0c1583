@@ -1,0 +1,16 @@
+README.md
+  h_b156936c57c455 128-137
+docs/concepts/judging-a-claim-against-its-evidence.md
+  h_b156936c57c455 8,11-13,15-25,28,30-32,34-36,38-40,42,44-45,47-54,56-57,59-160,162-163,165,167-170,174,177,189,193-196,198,210,213-240,242-251,253,255,257-259,261,265-301,308-310
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "ad9f8d99c3182c7eaef8c80e123f7b93fa0c1583",
+  "prompts": {},
+  "humans": {
+    "h_b156936c57c455": {
+      "author": "Ary Rabelo <aryrabelo@gmail.com>"
+    }
+  }
+}
