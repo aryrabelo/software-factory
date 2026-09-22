@@ -1,0 +1,22 @@
+.software-factory/catalog.lock.json
+  h_b156936c57c455 4
+catalog/L4/claim-is-supported-by-its-evidence.yaml
+  h_b156936c57c455 27-31
+docs/concepts/judging-a-claim-against-its-evidence.md
+  h_b156936c57c455 1-102
+docs/index.md
+  h_b156936c57c455 27
+docs/rules.md
+  h_b156936c57c455 30-33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "702ff481b30b39ff65e7dd1776934e2519828602",
+  "prompts": {},
+  "humans": {
+    "h_b156936c57c455": {
+      "author": "Ary Rabelo <aryrabelo@gmail.com>"
+    }
+  }
+}
